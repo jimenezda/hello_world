@@ -1,0 +1,340 @@
+<style>
+    table td {
+        padding: 3px
+    }
+</style>
+
+<html>
+    <h1 style="text-align:center">MUHC LABORATORIES</h1>
+    <h1 style="text-align:center" >CORE MOLECULAR LABORATORY NON-CONFORMITY EVENT (NCE) REPORT</h1>
+    <h3 style="text-align:center">PLEASE COMPLETE AND SUBMIT TO LAB QUALITY OFFICER</h3>
+    <br>
+
+    <form action="">
+        <table>
+            <tr>
+                <td><b>STEP A: DATA</b></td>
+            </tr>
+
+
+            <tr>
+                <td><b>Event occured:</b></td>
+                <td><input type="radio" name="" id="">MGH</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">GLEN SITE: <input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">MNH</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">Other (specify): <input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Date/Time:</td>
+                <td><input type="datetime-local" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Report initiated by:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+
+
+            <tr>
+                <td><b>Event detected:</b></td>
+                <td><input type="radio" name="" id="">MGH</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">GLEN SITE: <input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">MNH</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="radio" name="" id="">Other (specify): <input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Date/Time:</td>
+                <td><input type="datetime-local" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>MUHC Incident/Accident report?</td>
+                <td><input type="radio" name="" id="" onclick="hide()">No</td>
+                <td><input type="radio" name="" id="" onclick="show()">Yes <input type="text" name="" id="hello" placeholder="MUHC Report #"></td>
+            </tr>
+
+
+            <tr>
+                <td><b>Patient information</b></td>
+                <td><input type="checkbox" name="" id="">N/A</td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>MUHC#:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>CMDL#:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Other:</td>
+                <td><input type="text" name="" id=""></td>
+            </tr>
+
+
+            <tr>
+                <td><b>Impact on patient care:</b></td>
+                <td><input type="checkbox" name="" id="">Delay in reporting</td>
+                <td><input type="checkbox" name="" id="">Delay in treatment</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="">Redraw of sample</td>
+                <td><input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td>
+            </tr>
+            
+
+            <tr>
+                <td><b>Sample:</b></td>
+                <td><input type="checkbox" name="" id="">Blood</td>
+                <td><input type="checkbox" name="" id="">Saliva</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="">Amniotic fluid</td>
+                <td><input type="checkbox" name="" id="">Buccal swab</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="">FFPE block or scrolls</td>
+                <td><input type="checkbox" name="" id="">Fresh Frozen tissue</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="">cvs</td>
+                <td><input type="checkbox" name="" id="">Cultured cells</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="" id="">Bone Marrow</td>
+                <td><input type="checkbox" name="" id="">Others: <input type="text" name="" id=""></td>
+            </tr>
+
+
+
+            <tr>
+                <td><b>STEP B: PROBLEM</b></td>
+            </tr>
+
+
+            <tr>
+                <td><b>PRE-ANALYTICAL (BEFORE TESTING)</b></td>
+            </tr>
+            <tr><td><input type="checkbox" name="" id="">Mismatch in name</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Missing or wrong requestor's name</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Missing requestor's location</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Missing date/time of collection</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Requisition missing</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Missing or wrong information on requisition:</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="" id="">RAMQ, DOB</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="" id="">Clinical / family history information</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td></tr>
+            <tr><td><input type="checkbox" name="" id="">Invalid request</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Test NOT requested by a geneticist (BRCA and HD)</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Test requested on a minor with no symptoms (BRCA and HD)</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Missing two identifiers</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Unacceptable delay in delivery to the laboratory (for time sensitive samples)</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Test rejected</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Wrong type of tube</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Specimen not labelled</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Sample clotted/Haemolysed</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Transport problem</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Frozen sample (Blood)</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Sample in a wrong media</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Sample unsuitable for culture</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Sample leaking</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Broken container</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Sample rejected</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td></tr>
+            
+            
+            <tr>
+                <td><b>ANALYTICAL (TESTING PHASE)</b></td>
+            </tr>
+            <tr><td><input type="checkbox" name="" id="">Insufficient sample DNA/RNA quantity</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Degraded sample poor DNA/RNA quality</td></tr>
+            <tr><td><input type="checkbox" name="" id="">PCR inhibitors present in the sample</td></tr>
+            <tr><td>Delay or error in processing or delay in delivery of reagents/supplies:</td></tr>
+            <tr>
+                <td><input type="checkbox" name="" id="">Pre-PCR</td>
+                <td><input type="checkbox" name="" id="">PCR</td>
+                <td><input type="checkbox" name="" id="">Post-PCR</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Labelling</td>
+                <td><input type="radio" name="" id="">Labelling</td>
+                <td><input type="radio" name="" id="">Labelling</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Sample mix-up</td>
+                <td><input type="radio" name="" id="">Sample mix-up</td>
+                <td><input type="radio" name="" id="">Sample mix-up</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Reagent</td>
+                <td><input type="radio" name="" id="">Reagent</td>
+                <td><input type="radio" name="" id="">Reagent</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Instrument</td>
+                <td><input type="radio" name="" id="">Instrument</td>
+                <td><input type="radio" name="" id="">Instrument</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Method</td>
+                <td><input type="radio" name="" id="">Method</td>
+                <td><input type="radio" name="" id="">Method</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="" id="">Controls</td>
+                <td><input type="radio" name="" id="">Controls</td>
+                <td><input type="radio" name="" id="">Controls</td>
+            </tr>
+            <tr><td><input type="checkbox" name="" id="">Spill / leakage accident</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Problems</td></tr>
+            <tr>
+                <td>&nbsp&nbsp&nbsp&nbsp&nbsp Housekeeping / Technical services: <input type="text" name="" id=""></td>
+            </tr>
+            <tr><td><input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td></tr>
+
+
+            <tr>
+                <td><b>POST-ANALYTICAL (AFTER TESTING)</b></td>
+            </tr>
+            <tr><td><input type="checkbox" name="" id="">Report sent to incorrect location</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Patient's name mispelled on report</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Mutation description error</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Wrong result reported</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Miscalculation</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Incorrect interpretation</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Result Entry:</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Wrong patient</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Wrong result</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Result not entered</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Corrected report (see below)</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Reporting error identified and corrected:</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Pre release</td></tr>
+            <tr><td>&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" name="" id="">Post release</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Critical results not reported when required</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Complaint: record the name, phone # & always fill in Step C</td></tr>
+            <tr><td><input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td></tr>
+
+
+            <tr><td><b>STEP C: BRIEF EXPLANATION OF THE NC EVENT (INDICATE TEST/BATCH/MACHINE INVOLVED) (REQUIRED FIELD)</b></td></tr>
+            <tr><td><textarea name="" id="" cols="50" rows="10"></textarea></td></tr>
+
+
+            <tr><td><b>STEP D: IMMEDIATE ACTION TAKEN (REQUIRED FIELD)</b></td></tr>
+            <tr><td><textarea name="" id="" cols="50" rows="10"></textarea></td></tr>
+
+
+            <tr><td><b>STEP E: ROOT CAUSE ANALYSIS AND FOLLOW-UP (REQUIRED FIELD)</b></td></tr>
+            <tr><td><textarea name="" id="" cols="50" rows="10"></textarea></td></tr>
+            <tr><td>Possible cause of error:</td></tr>
+            <tr>
+                <td><input type="checkbox" name="" id="">Random/Inattention</td>
+                <td><input type="checkbox" name="" id="">Incomplete Training</td>
+                <td><input type="checkbox" name="" id="">Distraction in the Workplace</td>
+                <td><input type="checkbox" name="" id="">Supply Problem</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="">Software/IS</td>
+                <td><input type="checkbox" name="" id="">Not following SOP</td>
+                <td><input type="checkbox" name="" id="">Workflow/Space Issue</td>
+                <td><input type="checkbox" name="" id="">Equipment Malfunction</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id="">Outside Lab Error</td>
+                <td><input type="checkbox" name="" id="">Other: <input type="text" name="" id=""></td>
+            </tr>
+            <tr><td>Impact on lab to correct error</td></tr>
+            <tr>
+                <td>In person hours (act):</td>
+                <td><input type="radio" name="" id="">&lt 1 hour</td>
+                <td><input type="radio" name="" id="">1 to 3 hours</td>
+                <td><input type="radio" name="" id="">3 to 7 hours</td>
+                <td><input type="radio" name="" id="">&gt 7 hours</td>
+            </tr>
+            <tr>
+                <td>In supply costs (act):</td>
+                <td><input type="radio" name="" id="">None</td>
+                <td><input type="radio" name="" id="">&lt $100</td>
+                <td><input type="radio" name="" id="">$100 to $500</td>
+                <td><input type="radio" name="" id="">&gt $500</td>
+            </tr>
+            <tr>
+                <td>Completed by:</td>
+                <td><input type="text" name="" id=""></td>
+                <td>Date:</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+
+
+            <tr><td><b>STEP F: CORRECTIVE ACTION/ PREVENTIVE ACTION (REQUIRED FIELD)</b></td></tr>
+            <tr><td><textarea name="" id="" cols="50" rows="10"></textarea></td></tr>
+
+
+            <tr><td><b>STEP G: Comments / documents attached to this NC</b></td></tr>
+            <tr><td><textarea name="" id="" cols="50" rows="10"></textarea></td></tr>
+
+
+            <tr>
+                <td>Completed by:</td>
+                <td><input type="text" name="" id=""></td>
+                <td>Date:</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Reviewed by Quality Control officer or delegated:</td>
+                <td><input type="text" name="" id=""></td>
+                <td>Date:</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Data entered in NCE database by:</td>
+                <td><input type="text" name="" id=""></td>
+                <td>Date:</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Reviewed by Lab Manager or delegated (when required):</td>
+                <td><input type="text" name="" id=""></td>
+                <td>Date:</td>
+                <td><input type="date" name="" id=""></td>
+            </tr>
+
+        </table>
+    </form>
+</html>
+
+<script>
+
+</script>
